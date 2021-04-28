@@ -1,0 +1,15 @@
+.bar {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 200%;
+  background-color: #F9F8FE; 
+  justify-content: space-between;
+}
+
+
+
+.btnHome {
+  margin-left:auto;
+  margin-right: 5px;
+}
+
