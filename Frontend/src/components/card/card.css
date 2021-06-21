@@ -1,0 +1,51 @@
+.card {
+    width: 700px;
+    height: 279px;
+    margin-top: 78px;
+    /* margin-left: -60px; */
+    background-color: #FFFFFF;
+    border-radius: 16px 16px 16px 16px;
+    display: flex;
+}
+
+.firstLine {
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    color:#FFFFFF;
+    justify-content: space-around;
+}
+.secondLine{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.date {
+    margin-left:auto
+}
+
+.colorPart {
+    width: 700px;
+    height: 205px;
+    background-color: rgba(67, 45, 212, 0.7);
+    border-radius: 16px 16px 0 0;
+}
+
+.content {
+    padding: 0 21px;
+}
+
+.progressBar {
+    margin-bottom: 58px;
+}
+
+.lightPart {
+    margin-top: 16px;
+}
+
+.date {
+    margin-top: -0.5px;
+}

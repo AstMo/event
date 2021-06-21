@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bgTeam.Impl.Rabbit" Version="3.1.17" />
+    <PackageReference Include="bgTeam.Impl.Serilog" Version="3.1.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PartyMaker.EmailService.Common\PartyMaker.EmailService.Common.csproj" />
+    <ProjectReference Include="..\PartyMaker.EmailService\PartyMaker.EmailService.csproj" />
+  </ItemGroup>
+
+</Project>

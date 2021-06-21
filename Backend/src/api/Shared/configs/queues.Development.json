@@ -1,0 +1,15 @@
+{
+  "Queue": {
+    "Host": "localhost",
+    "Port": "16673",
+    "VirtualHost": "/",
+    "Login": "user",
+    "Password": "123"
+  },
+
+  "Queues": {
+    "EventResponseTimeout": "0:10:00",
+    "EmailQueue": "partymaker.email",
+    "DirectExchangeName": "partymaker.direct"
+  }
+}

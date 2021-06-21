@@ -1,0 +1,6 @@
+{
+  "Database": {
+    "ConnectionString": "User ID=cv_dentistry;Password=123;Host=localhost;Port=16432;Database=cv_dentistry.Db;",
+    "EnableLog": "false"
+  }
+}

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Shared\configs\email.Development.json" Link="configs\email.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\queues.Development.json" Link="configs\queues.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\serilog.Development.json" Link="configs\serilog.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\email.production.json" Link="configs\email.production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\queues.production.json" Link="configs\queues.production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\serilog.production.json" Link="configs\serilog.production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bgTeam.Queues" Version="3.1.17" />
+    <PackageReference Include="Scrutor" Version="3.2.2" />
+    <PackageReference Include="StringTemplate4" Version="4.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PartyMaker.Configuration\PartyMaker.Configuration.csproj" />
+    <ProjectReference Include="..\PartyMaker.EmailService.Common\PartyMaker.EmailService.Common.csproj" />
+    <ProjectReference Include="..\PartyMaker.Story\PartyMaker.Story.csproj" />
+  </ItemGroup>
+
+</Project>

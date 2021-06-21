@@ -1,0 +1,6 @@
+{
+  "WebAppSettings": {
+    "LinkFormat": "http://localhost:3000/approveregistration?link={0}",
+    "InviteLinkFormat": "http://localhost:55860/api/Account/inviteregistration/{0}"
+  }
+}

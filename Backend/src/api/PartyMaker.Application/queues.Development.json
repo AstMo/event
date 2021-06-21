@@ -1,0 +1,15 @@
+{
+  "Queue": {
+    "Host": "rabbit",
+    "Port": "5672",
+    "VirtualHost": "/",
+    "Login": "user",
+    "Password": "123"
+  },
+
+  "Queues": {
+    "EventResponseTimeout": "0:10:00",
+    "EmailQueue": "idm.email",
+    "DirectExchangeName": "idm.direct",
+  }
+}

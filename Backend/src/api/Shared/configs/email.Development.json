@@ -1,0 +1,15 @@
+{
+  "EmailService": {
+    "SmtpPoolMaxSize": "100",
+    "SmtpPoolInitialSize": "10",
+    "SmtpUsername": "vstu.ivt.61@gmail.com",
+    "SmtpPassword": "AIVshlyapa",
+    "SmtpHost": "smtp.gmail.com",
+    "SmtpPort": "587",
+    "SmtpUseSsl": "true",
+    "FromEmail": "vstu.ivt.61@gmail.co",
+    "DebugEmail": "romanshadow3@gmail.com",
+    "HandlingMessageTimeout": "5000",
+    "Recipient": "romanshadow3@gmail.com"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "Database": {
+    "ConnectionString": "User ID=partymaker_login;Password=CwKTq2KCU^U@CM+E;Host=localhost;Port=5432;Database=partymaker.Db;",
+    "EnableLog": "false"
+  }
+}

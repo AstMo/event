@@ -1,0 +1,5 @@
+{
+  "WebAppSettings": {
+    "LinkFormat": "http://cv-dentistry/api/Accout/approve/{0}"
+  }
+}

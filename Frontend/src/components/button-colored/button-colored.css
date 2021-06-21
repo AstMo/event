@@ -1,0 +1,32 @@
+.buttonColored {
+    font-size: 18px;
+    height: 69px;
+    font-weight: 600;
+    padding: 22px 38px;
+    background: linear-gradient(90deg, #432DD4, #7180B9);
+    border-radius: 100px;
+    border-color:#432DD4;
+    color: #ffffff;
+
+
+}
+
+.btnPurple {
+    font-size: 18px;
+    height: 69px;
+    font-weight: 600;
+    padding: 22px 38px;
+    background-color: #432DD4;
+    border-radius: 100px;
+    color: #ffffff;
+}
+
+.btnLightPurple {
+    font-size: 18px;
+    height: 69px;
+    font-weight: 600;
+    padding: 22px 38px;
+    background-color: #7180B9;
+    border-radius: 100px;
+    color: #ffffff;
+}

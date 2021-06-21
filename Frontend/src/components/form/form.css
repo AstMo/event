@@ -1,0 +1,62 @@
+
+.reg {
+    justify-content: center;
+    padding-top: 100px;
+    flex-grow: 1;
+    width: 500 px;
+  }
+  
+  .reg> div {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .logoEntry {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+  }
+  
+  .buttonsEntry {
+    display: flex;
+    padding: 43px;
+  }
+  
+ 
+  
+  .btnReg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  
+  body {
+    background-color: #F9F8FE !important; 
+    margin: 24px 32px;
+    font-family: 'Open Sans', sans-serif;
+  
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }

@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <AssemblyName>НУ</AssemblyName>
+    <UserSecretsId>2daca8b9-6659-434d-86df-6729a4c6dfa8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Shared\configs\imageStore.Development.json" Link="configs\imageStore.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\database.Development.json" Link="configs\database.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\queues.Development.json" Link="configs\queues.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\serilog.Development.json" Link="configs\serilog.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\authentication.Development.json" Link="configs\authentication.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\webappconf.Development.json" Link="configs\webappconf.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\imageStore.Production.json" Link="configs\imageStore.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\database.Production.json" Link="configs\database.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\queues.Production.json" Link="configs\queues.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\serilog.Production.json" Link="configs\serilog.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\authentication.Production.json" Link="configs\authentication.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\configs\webappconf.Production.json" Link="configs\webappconf.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <PackageReference Include="bgTeam.Impl.PostgreSQL" Version="3.1.17" />
+    <PackageReference Include="bgTeam.Impl.Rabbit" Version="3.1.17" />
+    <PackageReference Include="bgTeam.Impl.Serilog" Version="3.1.17" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.10.9" />
+    <PackageReference Include="Scrutor" Version="3.2.2" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PartyMaker.Common\PartyMaker.Common.csproj" />
+    <ProjectReference Include="..\PartyMaker.DataAccess\PartyMaker.DataAccess.csproj" />
+    <ProjectReference Include="..\PartyMaker.Domain\PartyMaker.Domain.csproj" />
+    <ProjectReference Include="..\PartyMaker.Dto\PartyMaker.Dto.csproj" />
+    <ProjectReference Include="..\PartyMaker.Schema\PartyMaker.Schema.csproj" />
+    <ProjectReference Include="..\PartyMaker.Story\PartyMaker.Story.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

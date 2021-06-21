@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+    
+  db:
+    networks:
+      - cvd-network
+    image: postgres
+    container_name: db
+    ports:
+      - 16432:5432
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: cv_dentistry
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: cv_dentistry.Db
+    volumes:
+      - pgdata_dev:/var/lib/postgresql/data/pgdata
+
+  rabbit:
+    networks:
+      - cvd-network
+    image: rabbitmq:latest
+    container_name: rabbit
+    ports:
+      - 16671:15671
+      - 16672:15672
+      - 16673:5672
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: 123
+
+volumes:
+  pgdata_dev:
+     external: true
+    
+  filestore:
+     external: true
+     
+networks:
+  cvd-network:
